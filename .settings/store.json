@@ -1,0 +1,103 @@
+{
+  "aiModelList": [
+    {
+      "apiKey": "sk-4a1732424c7c40268fdade1742bd8bcd",
+      "apiKeyUrl": "https://platform.deepseek.com/api_keys",
+      "baseURL": "https://api.deepseek.com",
+      "icon": "https://s2.loli.net/2025/06/25/n39WmsCDbVLQzjr.png",
+      "key": "544bf5d3-7b2a-435f-8345-0025d9caab20",
+      "model": "deepseek-chat",
+      "modelType": "chat",
+      "title": "DeepSeek"
+    }
+  ],
+  "currentPage": "/core/image",
+  "activeFilePath": "ALS学习/动画蓝图.md",
+  "gitlabAutoSync": "disabled",
+  "picgo": {
+    "url": "http://127.0.0.1:36677"
+  },
+  "workspaceHistory": [],
+  "pin": true,
+  "gitlabInstanceType": "gitlab.com",
+  "accessToken": "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",
+  "imageMethodModel": "",
+  "primaryImageMethod": "ocr",
+  "lastSettingPage": "dev",
+  "githubImageAccessToken": "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",
+  "placeholderModel": "",
+  "autoUpdate": true,
+  "gitlabCustomUrl": "",
+  "primaryBackupMethod": "github",
+  "uiScale": 100,
+  "collapsibleList": [
+    "ALS学习/assets"
+  ],
+  "version": "0.20.3",
+  "autoSync": "disabled",
+  "language": "简体中文",
+  "smms": {
+    "token": "zk1KjyJjzQYwvuvJsGlvqQ7iVNRJso2o"
+  },
+  "githubImageUsername": "RorySpt",
+  "giteeAccessToken": "",
+  "currentPromptId": "0",
+  "currentAi": "544bf5d3-7b2a-435f-8345-0025d9caab20",
+  "markDescModel": "",
+  "audioModel": "",
+  "primaryModel": "544bf5d3-7b2a-435f-8345-0025d9caab20",
+  "gitlabUsername": "",
+  "isVectorDbEnabled": false,
+  "mainImageHosting": "github",
+  "rerankingModel": "",
+  "currentTagId": 1,
+  "jsdelivr": true,
+  "translateModel": "",
+  "promptList": [
+    {
+      "content": "请你扮演一个笔记软件的智能助手，可以参考记录内容，使用 markdown 语法，回答用户的问题。",
+      "id": "0",
+      "isDefault": true,
+      "title": "写作助手"
+    }
+  ],
+  "shortcuts": [
+    {
+      "key": "openWindow",
+      "value": "CommandOrControl+Shift+W"
+    },
+    {
+      "key": "quickRecordText",
+      "value": "CommandOrControl+Shift+T"
+    }
+  ],
+  "templateList": [
+    {
+      "content": "整理成一篇详细完整的笔记。\n满足以下格式要求：\n- 如果是代码，必须完整保留，不要随意生成。\n- 文字复制的内容尽量不要修改，只处理格式化后的内容。",
+      "id": "0",
+      "range": "all",
+      "status": true,
+      "title": "笔记"
+    },
+    {
+      "content": "最近一周的记录整理成一篇周报，将每条记录形成一句总结，每条不超过50字。",
+      "id": "1",
+      "range": "week",
+      "status": true,
+      "title": "周报"
+    }
+  ],
+  "workspacePath": "",
+  "previewTheme": "github",
+  "tesseractList": "eng,chi_sim",
+  "useImageRepo": false,
+  "assetsPath": "assets",
+  "chatLanguage": "中文",
+  "githubUsername": "RorySpt",
+  "embeddingModel": "",
+  "giteeAutoSync": "disabled",
+  "gitlabAccessToken": "",
+  "codeTheme": "github",
+  "darkMode": "system",
+  "note_locale": "中文"
+}
