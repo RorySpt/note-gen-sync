@@ -19,12 +19,12 @@ flowchart TD
     ABP_Layers -- 实现 --> ALI_Lyra
 ```
 
-<p><code>ABP_Base</code>是主要动画蓝图，设置在角色的Mesh上面。<code>ABP_Base</code>和<code>ABP_Layers</code>均实现了<code>ALI_Lyra</code>接口。可以调用LinkAnimClassLayers来将<code>ABP_Layers</code>对<code>ALI_Lyra</code>的实现链接到<code>ABP_Base</code>中：</p><p align="left">
+<p><code>ABP_Base</code>是主要动画蓝图，设置在角色的Mesh上面。<code>ABP_Base</code>和<code>ABP_Layers</code>均实现了<code>ALI_Lyra</code>接口。可以调用LinkAnimClassLayers来将<code>ABP_Layers</code>对<code>ALI_Lyra</code>的实现链接到<code>ABP_Base</code>中：</p>
+<p align="left">
 <img src="https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/b330f9f6-24f6-402e-9341-4a0327277da4.png"
 alt="图片描述"
 width="400" />
 </p>
-
 
 ### 功能划分
 
@@ -71,15 +71,12 @@ BlueprintThreadSafeUpdateAnimation工作在动画线程而非主线程，因此�
 
 ![image.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/db1dce6b-3654-492e-baa0-e85d63ed167f.png)
 
-
-
 在`ABP_Layers`中使用GetMainAnimInstance可以拿到`ABP_Base`（链接到的蓝图）的引用。为了可以能在PropertyAccess中使用，可以调用封装成纯函数：
 
 ![image.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/cf75184b-56af-4c63-a0ec-c2db2918b17d.png)<img src="https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/c628463c-be13-48a7-b316-a0013432cbea.png"
 alt="图片描述"
 style="margin: 5px 0;"
 width="500"/>
-
 
 ## 动画变形
 
@@ -134,7 +131,4 @@ width="500"/>
 
 ![image.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/803298d3-31ef-4a24-abf7-559bd5cfb589.png)
 
-```
-
-```
 
