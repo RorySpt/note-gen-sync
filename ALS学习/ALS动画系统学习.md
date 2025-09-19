@@ -4,7 +4,9 @@
 
 > [使用虚幻引擎使用动画蓝图链接 | 虚幻引擎 5.6 文档 | Epic Developer Community](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/using-animation-blueprint-linking-in-unreal-engine)
 
-使用分层动画技术，可以在动画图表上动态切换子部分，通过 **动画图层接口** 方式获取链接动画蓝图中包含的动画姿势
+### 动画蓝图链接系统
+
+使用**动画蓝图链接**系统，可以在动画图表上动态切换子部分，通过 **动画图层接口** 方式获取链接动画蓝图中包含的动画姿势
 
 ```mermaid
 flowchart TD
@@ -22,17 +24,7 @@ flowchart TD
 alt="图片描述" 
 width="400" />
 
-<div style="overflow: hidden;">
-    <div style="float: right; margin: 0 0 20px 20px; text-align: center;">
-
-
-
-</div>
-
-<p></p>
-
-
-</div>
+### 功能划分
 
 在`ABP_Base`中实现动画状态机，并将状态实现交给`ALI_Lyra`的**动画层接口**来实现：
 
@@ -68,11 +60,16 @@ flowchart TD
 
 在`ABP_Base`的BlueprintThreadSafeUpdateAnimation函数中进行数据获取和计算：
 ![image.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/45c5c25e-0835-43bb-a51f-f8a7a4d3390e.png)
+
+### 数据传递
+
 BlueprintThreadSafeUpdateAnimation工作在动画线程而非主线程，因此所有的调用的函数必须勾选线程安全选项，对主线程中的数据访问可以使用[**PropertyAccess**](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/property-access-in-unreal-engine)进行获取：
 
 > [虚幻引擎中的属性访问 | 虚幻引擎 5.6 文档 | Epic Developer Community](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/property-access-in-unreal-engine)
 
 ![image.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/db1dce6b-3654-492e-baa0-e85d63ed167f.png)
+
+
 
 在`ABP_Layers`中使用GetMainAnimInstance可以拿到`ABP_Base`（链接到的蓝图）的引用。为了可以能在PropertyAccess中使用，可以调用封装成纯函数：
 
