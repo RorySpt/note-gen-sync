@@ -25,7 +25,7 @@ flowchart TD
     <div style="float: right; margin: 0 0 20px 20px; text-align: center;">
 
 <img src="https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/b330f9f6-24f6-402e-9341-4a0327277da4.png"
-alt="图片描述" align="right"
+alt="图片描述"
 width="400" />
 
 </div>
