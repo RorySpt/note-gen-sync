@@ -19,13 +19,21 @@ flowchart TD
     ABP_Layers -- 实现 --> ALI_Lyra
 ```
 
-<code>ABP_Base</code>是主要动画蓝图，设置在角色的Mesh上面。<code>ABP_Base</code>和<code>ABP_Layers</code>均实现了<code>ALI_Lyra</code>接口。可以调用LinkAnimClassLayers来将<code>ABP_Layers</code>对<code>ALI_Lyra</code>的实现链接到<code>ABP_Base</code>中：
 
-<p align="center">
+
+<div style="overflow: hidden;">
+    <div style="float: right; margin: 0 0 20px 20px; text-align: center;">
+
 <img src="https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/b330f9f6-24f6-402e-9341-4a0327277da4.png"
-alt="图片描述"
+alt="图片描述" align="right"
 width="400" />
-</p>
+
+</div>
+<p><code>ABP_Base</code>是主要动画蓝图，设置在角色的Mesh上面。<code>ABP_Base</code>和<code>ABP_Layers</code>均实现了<code>ALI_Lyra</code>接口。可以调用LinkAnimClassLayers来将<code>ABP_Layers</code>对<code>ALI_Lyra</code>的实现链接到<code>ABP_Base</code>中：</p>
+
+
+</div>
+
 
 ### 功能划分
 
