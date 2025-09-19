@@ -2,7 +2,6 @@
 
 ## 动画变形
 
-
 > 需要开启 Animation Warping插件
 
 开启该插件之后可以使用变形函数
@@ -11,7 +10,7 @@
 
 可以旋转下部肢体，使动画的方向匹配移动方向
 
-![db9042bb-dc34-497f-8eb8-4f7cfde71add.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/db9042bb-dc34-497f-8eb8-4f7cfde71add.png)
+![7007221d-143f-47da-a950-9a99f99357b7.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/7007221d-143f-47da-a950-9a99f99357b7.png)
 
 ### StrideWarping
 
