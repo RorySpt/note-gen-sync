@@ -28,7 +28,28 @@
 
 ## 距离匹配
 
+> 需要开启AnimationLocomotionLibrary，
+
+### 动画准备
+
 创建曲线压缩设置，修改为UniformIndexable
 
 将需要距离匹配的动画（如移动停止动画）的压缩设置中的曲线压缩设置改为新建的曲线压缩设置
+
+在动画数据修饰符选项卡中选择DistanceCurveModifier为动画添加距离曲线
+![image.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/655e104a-caad-493e-930f-14b64d1e6ddd.png)
+
+### 播放动画
+
+要使用距离匹配需要使用SequenceEvaluator节点来驱动动画，它允许指定播放动画的当前帧
+
+![image.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/2f939843-2630-4d3f-8d73-fa784fde1b6b.png)
+
+使用PredictGroundMovementStopLocation函数节点计算停止距离
+
+![image.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/3d4f6ed5-7817-447a-b65c-b57ce39a30c0.png)
+
+将停止距离传入DistanceMatchToTarget节点，以根据当前到停止点的距离以播放正确的停止动画帧
+
+![image.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/803298d3-31ef-4a24-abf7-559bd5cfb589.png)
 
