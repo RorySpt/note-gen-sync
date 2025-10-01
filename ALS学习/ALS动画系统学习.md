@@ -106,7 +106,10 @@ width="500"/>
 
 ## 距离匹配
 
-> 需要开启AnimationLocomotionLibrary，
+> 需要开启AnimationLocomotionLibrary，它里面有两组非常有用的函数库：
+> 
+> - UAnimDistanceMatchingLibrary 基于距离度量而非时间驱动动画的技术库
+> - UAnimCharacterMovementLibrary 暂时只有两个用于预测的函数，预测**角色停止位置**和预测**角色转向时速度方向改变时的位置**
 
 ### 动画准备
 
@@ -131,4 +134,15 @@ width="500"/>
 
 ![image.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/803298d3-31ef-4a24-abf7-559bd5cfb589.png)
 
+## 动画通知器
+
+创建一个AnimNotifyState类型的动画蓝图，如`ANS_ExitPivot`
+
+在动画序列中添加该通知状态，并放到需要的位置
+
+![image.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/9e3519dd-61d6-4073-93a5-11c2487deeaf.png)![image.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/40d06611-6f6e-4530-943e-c790bd73ef2e.png)
+
+然后可以在动画蓝图的规则节点`WasAnimNotifyStateActiveInSourceState(Pivot)`中选中进行使用，当状态通知被动画触发时，这里会返回Ture
+
+![image.png](https://raw.githubusercontent.com/RorySpt/note-gen-image-sync/main/8365e0e8-5964-4aad-93f1-e1bae52ea358.png)
 
